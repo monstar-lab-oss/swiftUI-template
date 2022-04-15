@@ -49,7 +49,7 @@ The project template uses Cookiecutter to create your project from it. Run below
 cookiecutter git@github.com:monstar-lab-oss/swiftUI-template.git
 ```
 Give your desire app name then your company name. Thats it, you should be able to see your app directory created based on this template!
-
+From .github folder edit PULL_REQUEST_TEMPLATE.md file and remove OSS template. Other teamplate can be used in actual project. 
 The project is using cocoapods for managing external libraries and a Gemfile for managing the cocoapods version.
 To install the cocoapod dependencies do the following:
 
