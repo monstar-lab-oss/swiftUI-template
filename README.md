@@ -2,7 +2,7 @@
 [![IDE](https://img.shields.io/badge/Xcode-13-blue.svg)](https://developer.apple.com/xcode/)
 [![Language](https://img.shields.io/badge/swift-5.0-orange.svg)](https://swift.org)
 [![Platform](https://img.shields.io/badge/iOS-13-green.svg)](https://developer.apple.com/ios/)
-[![Build Status](https://github.com/monstar-lab-bd/mlbd-starter-swiftui-ios/actions/workflows/build.yml/badge.svg)](https://github.com/monstar-lab-bd/mlbd-starter-swiftui-ios/actions/workflows/build.yml)
+[![Build Status](https://github.com/monstar-lab-oss/swiftUI-template/actions/workflows/build.yml/badge.svg)](https://github.com/monstar-lab-oss/swiftUI-template/actions/workflows/build.yml)
 
 
 Project template to jumpstart your next iOS project with integrating best practices and tools.
@@ -46,7 +46,7 @@ brew install cookiecutter
 The project template uses Cookiecutter to create your project from it. Run below command to create your project from this template:
 
 ```
-cookiecutter git@github.com:monstar-lab-bd/mlbd-starter-swiftui-ios.git
+cookiecutter git@github.com:monstar-lab-oss/swiftUI-template.git
 ```
 Give your desire app name then your company name. Thats it, you should be able to see your app directory created based on this template!
 
@@ -77,7 +77,7 @@ The templete used `.xcconfig` and `BuildConfiguration.plist` files to maintain d
 You will have to manually configure the bundle id of the main target and test target.
 
 ## Contributing Code
-Please refer to [contributing guidelines](https://github.com/monstar-lab-bd/mlbd-starter-swiftui-ios/blob/main/CONTRIBUTING.md) before participating.
+Please refer to [contributing guidelines](https://github.com/monstar-lab-oss/swiftUI-template/blob/main/CONTRIBUTING.md) before participating.
 
 
 ## Acknowledgments
