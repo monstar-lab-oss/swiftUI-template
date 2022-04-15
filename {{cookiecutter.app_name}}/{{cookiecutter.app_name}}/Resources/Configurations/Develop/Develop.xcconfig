@@ -1,0 +1,13 @@
+//
+//  Configuration.xcconfig
+//  {{cookiecutter.app_name}}
+//
+//  Created by Rokon on 5/4/20.
+//  Copyright © 2020 {{cookiecutter.company_name}}. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+XCC_BUNDLE_NAME = {{cookiecutter.app_name}}-Develop
+XCC_CONFIG_PATH = Develop/BuildConfiguration.plist

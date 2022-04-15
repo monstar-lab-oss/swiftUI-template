@@ -1,0 +1,43 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Domain' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Domain
+
+  target 'DomainTests' do
+    # Pods for testing
+  end
+
+end
+
+target 'NetworkPlatform' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for NetworkPlatform
+
+  target 'NetworkPlatformTests' do
+    # Pods for testing
+  end
+
+end
+
+target 'TestApp' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for TestApp
+
+  target 'TestAppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'TestAppUITests' do
+    # Pods for testing
+  end
+
+end

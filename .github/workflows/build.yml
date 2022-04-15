@@ -1,0 +1,31 @@
+name: build
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    name: Build project
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        destination: ['platform=iOS Simulator,id=CE31BAFD-A2D5-4995-9732-0B9B105BDF09']
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Build
+        working-directory: ./{{cookiecutter.app_name}}
+        env:
+          platform: ${{ 'iOS Simulator' }}
+        run: |
+          ls -al
+          pod install --repo-update --clean-install
+          ls -al
+          echo "destination=${destination}"
+          xcodebuild clean test -workspace {{cookiecutter.app_name}}.xcworkspace -scheme Develop -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+    env:
+      destination: ${{ matrix.destination }}
