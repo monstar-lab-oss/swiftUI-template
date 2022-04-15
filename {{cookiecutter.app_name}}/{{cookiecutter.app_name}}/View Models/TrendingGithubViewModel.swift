@@ -32,20 +32,15 @@ class TrendingGithubViewModel: ObservableObject {
         }
         provider.makeTrendingGithubUseCase()
             .trendingRepositories(language: "swift", since: "")
-            .sink(receiveCompletion: { completion in
-                DispatchQueue.main.async {
-                    self.isLoadingRepositoryView = false
-                }
-                
+            .sink(receiveCompletion: { [weak self] completion in
+                self?.isLoadingRepositoryView = false
                 guard case let .failure(error) = completion else { return }
-                DispatchQueue.main.async {
-                    self.isShowingAlert = true
-                    self.appError = error
-                }
-            }, receiveValue: { repositories in
-                DispatchQueue.main.async {
-                    self.trendingRepositories = repositories
-                }
+                guard let self = self else { return }
+               
+                self.isShowingAlert = true
+                self.appError = error
+            }, receiveValue: { [weak self] repositories in
+                self?.trendingRepositories = repositories
             })
             .store(in: &bag)
     }
@@ -56,21 +51,14 @@ class TrendingGithubViewModel: ObservableObject {
         }
         provider.makeTrendingGithubUseCase()
             .trendingDeveloper(language: "swift", since: "")
-            .sink(receiveCompletion: { completion in
-                DispatchQueue.main.async {
-                    self.isLoadingDeveloperView = false
-                }
-                
+            .sink(receiveCompletion: {[weak self] completion in
+                self?.isLoadingDeveloperView = false
                 guard case let .failure(error) = completion else { return }
-                DispatchQueue.main.async {
-                    self.isShowingAlert = true
-                    self.appError = error
-                }
-                
-            }, receiveValue: { developers in
-                DispatchQueue.main.async {
-                    self.trendingDevelopers = developers
-                }
+                guard let self = self else { return }
+                self.isShowingAlert = true
+                self.appError = error
+            }, receiveValue: { [weak self] developers in
+                self?.trendingDevelopers = developers
             })
             .store(in: &bag)
         
