@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 @main
 struct __cookiecutter_app_name__App: App {
     @StateObject var viewModel = TrendingGithubViewModel()
