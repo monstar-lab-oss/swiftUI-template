@@ -58,7 +58,7 @@ Get Bundler
 sudo gem install bundler
 ```
 
-To install the specific cocoapods version run
+To install the specified cocoapods version in Gemfile run below
 
 ```
 bundle install
