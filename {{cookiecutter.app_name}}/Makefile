@@ -57,3 +57,7 @@ install_cocoapods:
 
 	pod install
 
+# Open Xcode 
+open:
+	open ./{{cookiecutter.app_name}}.xcworkspace
+
