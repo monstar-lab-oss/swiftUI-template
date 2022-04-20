@@ -20,7 +20,6 @@ This template will save those hours and help to follow standard project architec
 
 ### Todo
 * [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) TCA/Composable Architecture of iOS app using Combine and SwiftUI
-* [Gemfile for managing Cocoapods version](https://guides.cocoapods.org/using/a-gemfile.html) 
 * [R.swift](https://github.com/mac-cain13/R.swift) Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
 * [Swiftlint](https://github.com/realm/SwiftLint)
 * [Swinject](https://github.com/Swinject/Swinject)
