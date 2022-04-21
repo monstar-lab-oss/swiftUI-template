@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct MainView: View {
-   
+    
     var body: some View {
+        HStack {
+            // Use image using R.swift
+            R.image.fork_icon.image
+            Text("Title")
+        }
         TabView {
             TrendingRepositoryView()
                 .tabItem {
@@ -21,7 +26,6 @@ struct MainView: View {
                     Label("Developers", systemImage: "person.fill")
                 }
         }
-        .padding(.top, 10)
     }
 }
 
