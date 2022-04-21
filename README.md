@@ -20,7 +20,6 @@ This template will save those hours and help to follow standard project architec
 
 ### Todo
 * [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) TCA/Composable Architecture of iOS app using Combine and SwiftUI
-* [Gemfile for managing Cocoapods version](https://guides.cocoapods.org/using/a-gemfile.html) 
 * [Swiftlint](https://github.com/realm/SwiftLint)
 * [Swinject](https://github.com/Swinject/Swinject)
 * [Compiler performance profiling flags](https://www.jessesquires.com/blog/measuring-compile-times-xcode9)
@@ -58,7 +57,7 @@ Get Bundler
 sudo gem install bundler
 ```
 
-To install the specific cocoapods version run
+To install the specified cocoapods version in Gemfile run below
 
 ```
 bundle install
