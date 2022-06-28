@@ -20,8 +20,6 @@ This template will save those hours and help to follow standard project architec
 
 ### Todo
 * [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) TCA/Composable Architecture of iOS app using Combine and SwiftUI
-* [Gemfile for managing Cocoapods version](https://guides.cocoapods.org/using/a-gemfile.html) 
-* [R.swift](https://github.com/mac-cain13/R.swift) Get strong typed, autocompleted resources like images, fonts and segues in Swift projects
 * [Swiftlint](https://github.com/realm/SwiftLint)
 * [Swinject](https://github.com/Swinject/Swinject)
 * [Compiler performance profiling flags](https://www.jessesquires.com/blog/measuring-compile-times-xcode9)
@@ -49,7 +47,7 @@ The project template uses Cookiecutter to create your project from it. Run below
 cookiecutter git@github.com:monstar-lab-oss/swiftUI-template.git
 ```
 Give your desire app name then your company name. Thats it, you should be able to see your app directory created based on this template!
-
+From .github folder edit PULL_REQUEST_TEMPLATE.md file and remove OSS template. Other teamplate can be used in actual project. 
 The project is using cocoapods for managing external libraries and a Gemfile for managing the cocoapods version.
 To install the cocoapod dependencies do the following:
 
@@ -59,7 +57,7 @@ Get Bundler
 sudo gem install bundler
 ```
 
-To install the specific cocoapods version run
+To install the specified cocoapods version in Gemfile run below
 
 ```
 bundle install
