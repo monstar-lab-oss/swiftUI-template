@@ -34,7 +34,7 @@
 		71A07972E423F16BA31626F4 /* Pods___cookiecutter_app_name__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A765995885453B8F78B18ABA /* Pods___cookiecutter_app_name__.framework */; };
 		7FDE199D280E605000CEEF0F /* Configurations in Resources */ = {isa = PBXBuildFile; fileRef = 7FDE199C280E605000CEEF0F /* Configurations */; };
 		7FDE199F280E606400CEEF0F /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE199E280E606400CEEF0F /* R.generated.swift */; };
-		7FDE19A2280E614D00CEEF0F /* RsSwiftGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE19A1280E614D00CEEF0F /* RsSwiftGenerator.swift */; };
+		7FDE19A2280E614D00CEEF0F /* R+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FDE19A1280E614D00CEEF0F /* R+Extension.swift */; };
 		8101AD9241EC532209F69632 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D50A5A826B06C0EFF436A223 /* Pods___cookiecutter_app_name_____cookiecutter_app_name__UITests.framework */; };
 		9D4D8DA49C50FE01FBE203DB /* Pods___cookiecutter_app_name__Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE0D304C477888C9BAB4DF3 /* Pods___cookiecutter_app_name__Tests.framework */; };
 		A18DA40DBE63B30A422B7D6C /* Pods_Domain_DomainTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8E4727CFA03DB476698B25 /* Pods_Domain_DomainTests.framework */; };
@@ -194,7 +194,7 @@
 		7B2AC36295E89C162C4C70AE /* Pods-Domain.debug develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.debug develop.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.debug develop.xcconfig"; sourceTree = "<group>"; };
 		7FDE199C280E605000CEEF0F /* Configurations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Configurations; path = Resources/Configurations; sourceTree = "<group>"; };
 		7FDE199E280E606400CEEF0F /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
-		7FDE19A1280E614D00CEEF0F /* RsSwiftGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RsSwiftGenerator.swift; sourceTree = "<group>"; };
+		7FDE19A1280E614D00CEEF0F /* R+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "R+Extension.swift"; sourceTree = "<group>"; };
 		81D1954A8DEC3C46CECE6D03 /* Pods-Domain.release develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Domain.release develop.xcconfig"; path = "Target Support Files/Pods-Domain/Pods-Domain.release develop.xcconfig"; sourceTree = "<group>"; };
 		87969D22749ACF5DC2A1297A /* Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; path = "Target Support Files/Pods-{{cookiecutter.app_name}}Tests/Pods-{{cookiecutter.app_name}}Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		95FFD49CE269F6F378C539A0 /* Pods-NetworkPlatform-NetworkPlatformTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkPlatform-NetworkPlatformTests.release.xcconfig"; path = "Target Support Files/Pods-NetworkPlatform-NetworkPlatformTests/Pods-NetworkPlatform-NetworkPlatformTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -521,7 +521,7 @@
 		7FDE19A0280E612500CEEF0F /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				7FDE19A1280E614D00CEEF0F /* RsSwiftGenerator.swift */,
+				7FDE19A1280E614D00CEEF0F /* R+Extension.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1111,7 +1111,7 @@
 				C258ED0727563837007F1EA3 /* TrendingDeveloperView.swift in Sources */,
 				C258ED0F27563B65007F1EA3 /* TrendingGithubViewModel.swift in Sources */,
 				2F7B0E5A273AD7AC00C68B1F /* __cookiecutter_app_name__App.swift in Sources */,
-				7FDE19A2280E614D00CEEF0F /* RsSwiftGenerator.swift in Sources */,
+				7FDE19A2280E614D00CEEF0F /* R+Extension.swift in Sources */,
 				7FDE199F280E606400CEEF0F /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  RsSwiftGenerator.swift
+//  R+Extension.swift
 //  {{cookiecutter.app_name}}
 //
 //  Created by dinakar maurya on 2022/04/19.
